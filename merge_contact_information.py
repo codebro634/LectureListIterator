@@ -21,7 +21,14 @@ def normalize_row(row: dict[str, str]) -> dict[str, str]:
     normalized = {column: row.get(column, "") for column in EXPECTED_COLUMNS}
     if "." in normalized["first_name"]:
         normalized["first_name"] = "??"
+    normalized["mails"] = normalize_mails(normalized["mails"])
     return normalized
+
+
+def normalize_mails(mails: str) -> str:
+    parts = [part.strip() for part in mails.split(",") if part.strip()]
+    unique_parts = sorted(set(parts), key=str.casefold)
+    return ",".join(unique_parts)
 
 
 def teacher_sort_key(row: dict[str, str]) -> tuple[str, str]:
@@ -50,6 +57,53 @@ def read_rows(input_files: list[Path]) -> list[dict[str, str]]:
     return rows
 
 
+def merge_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    merged: dict[tuple[str, str, str, str, str], dict[str, str | list[str]]] = {}
+    total_rows = len(rows)
+
+    for index, row in enumerate(rows, start=1):
+        key = (
+            row["teacher"],
+            row["first_name"],
+            row["title"],
+            row["gender"],
+            row["mails"],
+        )
+
+        if key not in merged:
+            merged[key] = {
+                "lecture": [row["lecture"]] if row["lecture"] else [],
+                "teacher": row["teacher"],
+                "first_name": row["first_name"],
+                "title": row["title"],
+                "gender": row["gender"],
+                "mails": row["mails"],
+            }
+        else:
+            lecture_list = merged[key]["lecture"]
+            if row["lecture"] and row["lecture"] not in lecture_list:
+                lecture_list.append(row["lecture"])
+
+        if index % 25 == 0 or index == total_rows:
+            print(f"Merge progress: processed {index}/{total_rows} source rows, grouped={len(merged)}")
+
+    merged_rows: list[dict[str, str]] = []
+    for value in merged.values():
+        lectures = value["lecture"]
+        merged_rows.append(
+            {
+                "lecture": " | ".join(lectures),
+                "teacher": value["teacher"],
+                "first_name": value["first_name"],
+                "title": value["title"],
+                "gender": value["gender"],
+                "mails": value["mails"],
+            }
+        )
+
+    return merged_rows
+
+
 def write_rows(rows: list[dict[str, str]], output_file: Path) -> None:
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with output_file.open("w", encoding="utf-8", newline="") as csv_file:
@@ -63,9 +117,10 @@ def main() -> None:
     print(f"Found {len(input_files)} contact files in {INPUT_DIR}")
 
     rows = read_rows(input_files)
-    rows.sort(key=teacher_sort_key)
-    print(f"Writing {len(rows)} merged rows to {OUTPUT_FILE}")
-    write_rows(rows, OUTPUT_FILE)
+    merged_rows = merge_rows(rows)
+    merged_rows.sort(key=teacher_sort_key)
+    print(f"Writing {len(merged_rows)} merged rows to {OUTPUT_FILE}")
+    write_rows(merged_rows, OUTPUT_FILE)
     print("Merge finished.")
 
 

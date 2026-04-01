@@ -414,7 +414,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 
 def filter_records(records: list[LectureRecord]) -> list[LectureRecord]:
-    skip_terms = ["Projektarbeit", "Kolloquium","Sprechzeit", "Schulung", "übung", "Übung", "Praktikum", "Seminar", "Repetitorium", "Hörsaalübung", "im Rahmen des"]
+    skip_terms = ["labor", "StudiStart", "Denkwerkstatt", "Studienleistung", "Lernraum", "Saturday", "Ringvorlesung", "Fachschaftsrat", "Schreiben","Labor","Projekt","seminar","Online","Praktikum","praktikum","Projektarbeit", "Kolloquium","Sprechzeit", "Schulung", "übung", "Übung", "Praktikum", "Seminar", "Repetitorium", "Hörsaalübung", "im Rahmen des"]
     return [record for record in records if not any(term in record.title for term in skip_terms)]
 
 
