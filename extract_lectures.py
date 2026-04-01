@@ -391,6 +391,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
         description="Extract lecture titles, first lecturer, and lecturer emails from LUH QIS HTML."
     )
     parser.add_argument("--input", type=Path, default=INPUT_FILE, help="Path to the lecture list HTML file.")
+    parser.add_argument("--output", type=Path, default=None, help="Path to the generated CSV file.")
     parser.add_argument(
         "--cache-dir",
         type=Path,
@@ -413,13 +414,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 
 def filter_records(records: list[LectureRecord]) -> list[LectureRecord]:
-    skip_terms = ["Sprechzeit", "Schulung", "übung", "Übung", "Praktikum", "Seminar", "Repetitorium", "Hörsaalübung", "im Rahmen des"]
+    skip_terms = ["Projektarbeit", "Kolloquium","Sprechzeit", "Schulung", "übung", "Übung", "Praktikum", "Seminar", "Repetitorium", "Hörsaalübung", "im Rahmen des"]
     return [record for record in records if not any(term in record.title for term in skip_terms)]
 
 
 def main() -> None:
     args = build_arg_parser().parse_args()
     lecture_html = read_text_with_fallback(args.input)
+    output_file = args.output or (OUTPUT_FILE.parent / args.input.name)
     records = parse_lectures(lecture_html)
     enrich_with_emails(
         records=records,
@@ -430,7 +432,7 @@ def main() -> None:
     )
     records = filter_records(records)
     print_records(records)
-    write_csv(records, OUTPUT_FILE)
+    write_csv(records, output_file)
 
 
 if __name__ == "__main__":
