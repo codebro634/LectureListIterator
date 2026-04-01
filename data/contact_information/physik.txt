@@ -1,0 +1,65 @@
+lecture;teacher;first_name;title;gender;mails
+Elektrizität und Relativität (Physik II);Ospelkaus;Christian;Prof. Dr.;männlich;christian.ospelkaus@iqo.uni-hannover.de,pa-physik@maphy.uni-hannover.de
+Einführung in Python zu Theoretische Elektrodynamik und Theoretische Physik B;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Theoretische Elektrodynamik;Giulini;Domenico;Prof. Dr.;männlich;domenico.giulini@itp.uni-hannover.de
+Plenarübung zu Theoretische Elektrodynamik;Wienecke;Kläre;;;
+Betreuung für Computerübungen zu Theoretische Elektrodynamik;Wienecke;Kläre;;;
+Extraübung für besonders Interessierte zu Theoretische Elektrodynamik;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Spezielle Sprechzeit für Teilnehmende der Lehrveranstaltung Theoretische Elektrodynamik;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Schulung von Tutoren und Tutorinnen für die Lehrveranstaltung Theoretische Elektrodynamik;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Theoretische Physik B;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Plenarübung zu Theoretische Physik B;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Spezielle Sprechzeit für Teilnehmende der Lehrveranstaltung Theoretische Physik B;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Schulung von Tutoren und Tutorinnen für die Lehrveranstaltung Theoretische Physik B;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Betreuung für Computerübungen zu Theoretische Physik B;Flohr;Michael;PD Dr.;männlich;michael.flohr@itp.uni-hannover.de
+Kerne, Teilchen (Physik IV - Teil A);Walther;Clemens;Prof. Dr.;;walther@irs.uni-hannover.de
+Festkörperphysik I (Physik IV - Teil B);Gerhardt;Ilja;Prof. Dr.;weiblich;ilja.gerhardt@physics.uni-hannover.de
+Mathematik für Physiker II;Bauer;Wolfram;Prof. Dr.;;bauer@math.uni-hannover.de
+Einführung in die Quantentheorie - Theoretische Physik II;Santos;Luis;Prof. Dr.;;luis.santos@itp.uni-hannover.de
+Kohärente Optik;Schmidt;Piet;Prof. Dr.;;piet.schmidt@quest.uni-hannover.de
+Gravitationsphysik;Willke;Benno;apl. Prof. Dr.;männlich;benno.willke@aei.mpg.de
+Einführung in die Teilchenphysik;Kogler;Roman;Dr.;;
+Fortgeschrittene Quantentheorie;Lechtenfeld;Olaf;Prof. Dr.;;lechtenf@itp.uni-hannover.de,pa-physik@maphy.uni-hannover.de
+Elektronik;Block;Tammo;Dr.;männlich;block@maphy.uni-hannover.de
+Nichtlineare Optik/ Nonlinear optics;Kues;Michael;Prof. Dr.;männlich;michael.kues@iop.uni-hannover.de
+Atomoptik/ Atomic optics;Ospelkaus-Schwarzer;Silke;Prof. Dr.;;silke.ospelkaus@iqo.uni-hannover.de
+Statistical Field Theory;Frahm;Holger;Prof. Dr.;männlich;frahm@itp.uni-hannover.de,cio@uni-hannover.de
+Theorie der fundamentalen Wechselwirkungen;Fuchs;Elina;Prof. Dr.;weiblich;elina.fuchs@itp.uni-hannover.de
+Ultrakurze Laserpulse;Babushkin;Ihar;Priv.-Doz. Dr.;;babushkin@iqo.uni-hannover.de
+Physik der Solarzellen;Brendel;-Ing.;Prof. Dr.;;brendel@solar.uni-hannover.de
+Radioaktivität in der Umwelt und die Strahlengefährdung des Menschen;Walther;Clemens;Prof. Dr.;;walther@irs.uni-hannover.de
+Kernenergie und Brennstoffkreislauf, technische Aspekte und gesellschaftlicher Diskurs (Teil II);Walther;Clemens;Prof. Dr.;;walther@irs.uni-hannover.de
+Einführung in die Allgemeine Relativitätstheorie;Osborne;Tobias;Prof. Dr.;männlich;tobias.osborne@itp.uni-hannover.de
+Biophotonik - Bildgebung und Manipulation von biologischen Zellen;Heisterkamp;Alexander;Prof. Dr.;männlich;heisterkamp@iqo.uni-hannover.de,dekan@maphy.uni-hannover.de
+Laserinterferometrie;Heinzel;Apl;;;
+Optical Radiometry;Kovacev;Milutin;apl. Prof. Dr.;;kovacev@iqo.uni-hannover.de
+Quantenstrukturbauelemente/ Quantum devices;Haug;Rolf;Prof. Dr.;;haug@nano.uni-hannover.de,prodekan@maphy.uni-hannover.de
+Introduction to Nanophysics;Ding;Fei;Prof. Dr.;;f.ding@fkp.uni-hannover.de
+Laser Measurement Technology;Roth;Bernhard;Prof. Dr.;;bernhard.roth@hot.uni-hannover.de
+Experimental Methods in Atomic Physics;Abend;Sven;Dr.;;abend@iqo.uni-hannover.de
+Grundlagen optischer Fasern;Steinke;Michael;Dr.;männlich;michael.steinke@hitec.uni-hannover.de
+Applied Atomic Physics;Siercke;Mirco;Dr.;männlich;siercke@iqo.uni-hannover.de
+Foundations of Quantum Mechanics;Ipek;Selman;Dr.;;
+Single photon sources - from basics to applications;Gerhardt;Ilja;Prof. Dr.;weiblich;ilja.gerhardt@physics.uni-hannover.de
+Elektronische Metrologie im Optiklabor/ Electronic metrology in the optics laboratory;Heurs;Michèle;Prof. Dr.;;michele.heurs@aei.mpg.de,michele.heurs@aei.uni-hannover.de
+Computerphysik/ computational physics;Jeckelmann;Eric;Prof. Dr.;;eric.jeckelmann@itp.uni-hannover.de
+Computational Photonics;Demircan;Ayhan;apl. Prof. Dr.;;demircan@iqo.uni-hannover.de
+Physics of Life;Chichkov;Boris;Prof. Dr.;;chichkov@iqo.uni-hannover.de
+Grundlagen der Radioaktivität und des Strahlenschutzes;Walther;Clemens;Prof. Dr.;;walther@irs.uni-hannover.de
+Physik für Aufgeweckte - Saturday Morning Lecture;Heisterkamp;Alexander;Prof. Dr.;männlich;heisterkamp@iqo.uni-hannover.de,dekan@maphy.uni-hannover.de
+MOS-Transistoren und Speicher;Wietler;Tobias;Prof. Dr.;männlich;t.wietler@isfh.de,wietler@solar.uni-hannover.de
+Advanced Special Relativity;Giulini;Domenico;Prof. Dr.;männlich;domenico.giulini@itp.uni-hannover.de
+Applied Wave Optics;Caspary;-Ing.;Dr.;;reinhard.caspary@phoenixd.uni-hannover.de
+Charakterisierung von Halbleitern und Solarzellen;Schmidt;Jan;Prof. Dr.;männlich;schmidt@solar.uni-hannover.de
+Dynamics and entanglement in quantum many-body systems;Wilming;Henrik;Dr.;;henrik.wilming@itp.uni-hannover.de
+Foundations of probability;Papa;Maria;Prof. Dr.;weiblich;Maria.Alessandra.Papa@aei.mpg.de
+Fracture of Materials and Fracture Mechanics;Zhuang;Ph.;Prof.;;zhuang@iop.uni-hannover.de
+Halbleiterphysik mit Python;Hübner;Jens;PD Dr.;;jhuebner@nano.uni-hannover.de
+Introduction to computational Optics;Calà Lesina;Antonio;Prof. Dr.;männlich;antonio.calalesina@hot.uni-hannover.de
+Introduction to quantum chaos;Jeckelmann;Eric;Prof. Dr.;;eric.jeckelmann@itp.uni-hannover.de
+Migration Pathways of Radionuclides in the Biosphere;Dubchak;Sergiy;Dr.;;dubchak@irs.uni-hannover.de
+Optimal Control of Quantum Systems;Shvetsov-Shilovskiy;Nikolay;PD Dr.;;nikolay.shvetsov-shilovskiy@itp.uni-hannover.de
+Playing with NISQ;Gupta;M.;;;sabhyata.gupta@itp.uni-hannover.de
+Schlüsseltechnologien für die personalisierte Medizin;Koroleva;Anastasia;Dr.;weiblich;
+Semiconductor Spectroscopy;Oestreich;Michael;Prof. Dr.;männlich;oest@nano.uni-hannover.de
+Simulations in photonics (wave-optics);Calà Lesina;Antonio;Prof. Dr.;männlich;antonio.calalesina@hot.uni-hannover.de
